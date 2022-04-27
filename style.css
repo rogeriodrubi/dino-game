@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#game{
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    height: 200px;
+    border: 10px solid black;
+}
+
+#personagem{
+    width: 20px;
+    height: 50px;
+    background-color: rgb(1, 134, 23);
+    position: relative;
+    top: 150px;
+    left: 100px;
+}
+
+.animate{
+    animation: jump 1s;
+}
+
+
+#bloco{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    top: 130px;
+    left: 980px;
+    animation: corre 3s infinite;
+    animation-timing-function: linear;
+}
+    
+@keyframes corre{
+    0%{left:980px;}
+    100%{left: 0px;}
+    
+}
+
+
+@keyframes jump {
+    0%{top: 150px;}
+    50%{top: 60px;}
+    100%{top: 150px;}
+}
